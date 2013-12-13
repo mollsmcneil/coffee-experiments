@@ -11,13 +11,17 @@
   	<nav>
   		<a href="<%= root_path %>">The Experiments</a>
   		<a href="<%= methods_index_path %>">Methods</a>
-  		<a href="<%= questions_index_path %>">Dear Dr. Drip</a>
+  		<a href="<%= questions_index_path %>">Dear Dr. Bean</a>
   		<a href="<%= ideas_index_path %>">Ideas</a>
   	</nav>
   </header>
+  <article>
+    <div> <%= yield %> </div>
+    
+    <footer>
+    </footer>
 
-
-<%= yield %>
+  </article>
 
 </body>
 </html>

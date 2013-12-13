@@ -11,3 +11,68 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	background: black;
+}
+
+
+header {
+
+  background-image: url(/assets/coffee_experiments_header.jpg);
+  width: 800px;
+  height: 237px;
+  background-size: 100%;
+}
+
+nav {
+	font-family: "American Typewriter";
+	position: relative;
+	top: 210px;
+	left: 25px;
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+}
+
+a:link {
+	color: #4b4642;
+	text-decoration: none;
+}
+
+a:visitied {
+	color: #4b4642;
+	text-decoration: none;
+}
+
+article {
+
+  background-image: url(/assets/coffee_experiments_paper.jpg);
+  width: 800px;
+  background-size: 100%;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-family: "American Typewriter";
+  color: #4b4642;
+	
+}
+
+div {
+	height: 800px;
+	position: relative;
+	top: 29px;
+	text-align: center;
+
+}
+
+footer {
+
+  background-image: url(/assets/coffee_experiments_edge.png);
+  width: 800px;
+  height: 66px;
+  background-size: 100%;
+  position: relative;
+  top: 15px;
+}
