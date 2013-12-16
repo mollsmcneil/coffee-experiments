@@ -13,9 +13,30 @@
  */
 
 body {
-	background: black;
+	background-image: url(/assets/texture-brown.jpg);
+	font-family: "American Typewriter";
+	font-weight: lighter;
+	color: #4b4642;
 }
 
+h6 {
+	font-size: 24px;
+	padding-top: 10px;
+    padding-left: 15px;
+    letter-spacing: 1.7px;
+    font-weight: lighter;
+    color: black;
+
+}
+
+h1 {
+	font-size: 20px;
+    letter-spacing: 1.7px;
+    font-weight: normal;
+    //text-align: left;
+    //padding-left: 25px
+
+}
 
 header {
 
@@ -23,28 +44,60 @@ header {
   width: 800px;
   height: 237px;
   background-size: 100%;
+  margin: auto;
 }
 
 nav {
-	font-family: "American Typewriter";
-	position: relative;
-	top: 210px;
-	left: 25px;
+	position: absolute;
+	width: inherit;
+	top: 180px;
 	text-align: center;
-	text-decoration: none;
-	
-}
+	letter-spacing: 1.5px;
 
 }
 
-a:link {
+
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
 	color: #4b4642;
 	text-decoration: none;
 }
 
-a:visitied {
-	color: #4b4642;
-	text-decoration: none;
+table {
+	width: 90%;
+	margin: auto;
+	height: 55px;
+}
+
+td.current {
+	background-image: url(/assets/coffee-experiments-glasses.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    opacity: 1
+
+
+}
+
+td.current > a {
+	font-weight: normal; 
+
+}
+
+td {
+	width:25%;
+	vertical-align: bottom;
+	opacity: 0.8;
+}
+
+* {
+	margin:0;
+	padding: 0;
+	font-weight: normal;
 }
 
 article {
@@ -54,13 +107,14 @@ article {
   background-size: 100%;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  font-family: "American Typewriter";
+  text-decoration: none;
   color: #4b4642;
+  margin: auto;
 	
 }
 
 div {
-	height: 800px;
+	height: 300px;
 	position: relative;
 	top: 29px;
 	text-align: center;

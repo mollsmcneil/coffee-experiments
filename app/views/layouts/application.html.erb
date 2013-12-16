@@ -8,11 +8,26 @@
 </head>
 <body>
   <header>
+    <h6>
+      The Coffee Experiments
+    </h6>
   	<nav>
-  		<a href="<%= root_path %>">The Experiments</a>
-  		<a href="<%= methods_index_path %>">Methods</a>
-  		<a href="<%= questions_index_path %>">Dear Dr. Bean</a>
-  		<a href="<%= ideas_index_path %>">Ideas</a>
+      <table>
+        <tr>
+          <td class="<%= "current" if request.path == root_path %>">
+            <a href="<%= root_path %>">The Experiments</a>
+          </td>
+          <td class="<%= "current" if request.path == methods_index_path %>">
+            <a href="<%= methods_index_path %>">Methods</a>
+          </td>
+          <td class="<%= "current" if request.path == questions_index_path %>">
+            <a href="<%= questions_index_path %>">Dear Dr. Bean</a>
+          </td>
+          <td class="<%= "current" if request.path == ideas_index_path %>">
+            <a href="<%= ideas_index_path %>">Ideas</a>
+          </td>
+        </tr>
+      </table>
   	</nav>
   </header>
   <article>
