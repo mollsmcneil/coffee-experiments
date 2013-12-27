@@ -2,6 +2,10 @@ CoffeeExperiments::Application.routes.draw do
   get "questions/index"
   get "methods/index"
   get "ideas/index"
+  get "methods/frenchpress"
+  get "methods/clever"
+  get "methods/mokapot"
+  get "methods/pourover"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
