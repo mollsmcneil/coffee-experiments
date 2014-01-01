@@ -14,3 +14,6 @@ end
 
 def mokapot
 end
+
+def aeropress
+end
