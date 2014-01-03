@@ -22,14 +22,15 @@ body {
 h6 {
 	font-size: 24px;
 	padding-top: 10px;
-    padding-left: 15px;
-    letter-spacing: 1.7px;
-    font-weight: lighter;
-    color: black;
+  padding-left: 15px;
+  letter-spacing: 1.7px;
+  font-weight: lighter;
+  color: black;
 
 }
 
 p {
+  position: relative;
   margin: 6px;
   padding-left: 33px;
   padding-right: 33px;
@@ -111,6 +112,10 @@ td.current > a {
 
 }
 
+td:hover {
+  opacity: 1;
+}
+
 td {
 	width:25%;
 	vertical-align: bottom;
@@ -121,6 +126,7 @@ td {
 	margin:0;
 	padding: 0;
 	font-weight: normal;
+  list-style: none;
 }
 
 article {
@@ -133,6 +139,7 @@ article {
   text-decoration: none;
   color: #4b4642;
   margin: auto;
+  height: 5000px;
 	
 }
 
@@ -173,6 +180,8 @@ ul li a {
   padding: 5px 10px 5px 10px;
   background: #4b4642;
   white-space: nowrap;
+  margin-left: 10px;
+
 }
 
 ul li a:hover {
@@ -195,7 +204,7 @@ li:hover li a:hover {
 }
 
 
-div table{
+div table {
 
   font-family: "Helvetica Neue";
   font-size: 14px;
@@ -205,12 +214,8 @@ div table{
 
 div table td {
   width:auto;
-  height: 28px;
+  height: 56px;
+
   
 }
 
-div2 {
-  font-family: "American Typewriter";
-
-
-}
