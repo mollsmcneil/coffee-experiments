@@ -30,7 +30,6 @@ h6 {
 }
 
 p {
-  position: relative;
   margin: 6px;
   padding-left: 33px;
   padding-right: 33px;
@@ -55,6 +54,7 @@ h2 {
   text-align: left;
   padding-left: 20px;
   padding-bottom: 28px;
+
 }
 
 h3 {
@@ -139,13 +139,12 @@ article {
   text-decoration: none;
   color: #4b4642;
   margin: auto;
-  height: 5000px;
+  padding-top: 28px;
 	
 }
 
 div {
 	height: 300px;
-	position: relative;
 	top: 29px;
 	text-align: center;
 
@@ -157,14 +156,12 @@ footer {
   width: 800px;
   height: 66px;
   background-size: 100%;
-  position: relative;
-  top: 15px;
+  
 }
 
 
 ul li {
   display: block;
-  position: relative;
   float: left;
 }
 
@@ -181,7 +178,6 @@ ul li a {
   background: #4b4642;
   white-space: nowrap;
   margin-left: 10px;
-
 }
 
 ul li a:hover {
@@ -214,8 +210,6 @@ div table {
 
 div table td {
   width:auto;
-  height: 56px;
-
-  
+  height: 56px; 
 }
 
