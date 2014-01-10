@@ -34,7 +34,7 @@ p {
   padding-left: 33px;
   padding-right: 33px;
   text-align: justify;
-  line-height: 2.1;
+  line-height: 2.15;
   font-family: Helvetica Neue;
   font-size: 14px;
   font-weight: 400;
@@ -91,7 +91,7 @@ a {
 	text-decoration: none;
 }
 
-table {
+table.nav {
 	width: 90%;
 	margin: auto;
 	height: 55px;
@@ -144,8 +144,8 @@ article {
 }
 
 div {
-	height: 300px;
-	top: 29px;
+	
+	top: 20px;
 	text-align: center;
 
 }
@@ -156,7 +156,8 @@ footer {
   width: 800px;
   height: 66px;
   background-size: 100%;
-  
+  position: relative;
+  top: 20px;
 }
 
 
@@ -213,3 +214,8 @@ div table td {
   height: 56px; 
 }
 
+div table {
+  width: 90%;
+  margin: auto;
+  height: 55px;
+}
