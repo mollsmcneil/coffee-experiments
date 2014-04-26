@@ -12,36 +12,107 @@
  *= require_tree .
  */
 
+* {
+  margin:0;
+  padding: 0;
+  font-weight: normal;
+  list-style: none;
+}
+
+a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  color: #4b4642;
+  text-decoration: none;
+
+}
+
+article {
+
+  background-image: url(/assets/coffee_experiments_paper.jpg);
+  width: 800px;
+  background-size: 100%;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  text-decoration: none;
+  color: #4b4642;
+  margin: auto;
+  padding-top: 28px;
+  
+}
+
+article > div {
+  background-color: rgba(255,255,255,0.8);
+  top: 20px;
+  text-align: center;
+}
+
 body {
 	background-image: url(/assets/texture-brown.jpg);
 	font-family: "American Typewriter";
 	font-weight: lighter;
 	color: #4b4642;
-}
-
-h6 {
-	font-size: 24px;
-	padding-top: 10px;
-  padding-left: 15px;
-  letter-spacing: 1.7px;
-  font-weight: lighter;
-  color: black;
 
 }
 
-p {
-  margin: 6px;
-  padding-left: 33px;
-  padding-right: 33px;
-  text-align: justify;
-  line-height: 2.15;
-  font-family: Helvetica Neue;
+div table td {
+  width: 80px;
+  height: 45px;
+  border-left:1px solid black;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  vertical-align: top;
+}
+
+div table td:last-child {
+  width: auto;
+}
+
+div table td:first-child, div table th:first-child {
+  border-left: none;
+}
+
+div table th {
+  border-bottom: 1px solid black;
+  padding-bottom: 12px;
+  padding-top: 6px;
+  font-family: "American Typewriter";
   font-size: 14px;
-  font-weight: 400;
+  border-left:1px solid black;
+  text-align: center;
+}
+
+div table th:last-child {
+  text-align: left;
+  padding-left: 32px;
+}
+
+footer {
+   background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0));
+}
+
+footer > div{
+  background-image: url(/assets/coffee_experiments_edge.png);
+  width: 800px;
+  height: 66px;
+  background-size: 100%;
+  position: relative;
+  top: 20px;
+}
+
+header {
+  background-image: url(/assets/coffee_experiments_header.jpg);
+  width: 800px;
+  height: 237px;
+  background-size: 100%;
+  margin: auto;
 }
 
 h1 {
-	font-size: 20px;
+  font-size: 20px;
   letter-spacing: 1.7px;
   font-weight: normal;
 
@@ -64,13 +135,28 @@ h3 {
   padding-top: 28px;
 }
 
-header {
+h4 {
+  font-size: 20px;
+  letter-spacing: 1.7px;
+  font-weight: normal;
+  padding-top: 40px;
 
-  background-image: url(/assets/coffee_experiments_header.jpg);
-  width: 800px;
-  height: 237px;
-  background-size: 100%;
-  margin: auto;
+}
+
+h5 {
+  font-size: 20px;
+  letter-spacing: 1.7px;
+  font-weight: normal;
+}
+
+h6 {
+	font-size: 24px;
+	padding-top: 10px;
+  padding-left: 15px;
+  letter-spacing: 1.7px;
+  font-weight: lighter;
+  color: black;
+
 }
 
 nav {
@@ -79,16 +165,44 @@ nav {
 	top: 180px;
 	text-align: center;
 	letter-spacing: 1.5px;
+  height: 85px;
+  background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.8));
+}
+
+p {
+  margin: 6px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  line-height: 16pt;
+  font-family: "Apple Symbols";
+  font-size: 16px;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
 
 }
 
-a {
-	display: block;
-	width: 100%;
-	height: 100%;
-	padding-top: 30px;
-	color: #4b4642;
-	text-decoration: none;
+p:first-letter {
+  font-size: 200%;
+  float: left;
+  line-height: .9;
+  font-family: "American Typewriter";
+  margin-right: 1px;
+}
+
+div table {
+  font-family: "Apple Symbols";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  margin-top: 33px;
+
 }
 
 table.nav {
@@ -97,69 +211,29 @@ table.nav {
 	height: 55px;
 }
 
-td.current {
+table.nav td.current {
 	background-image: url(/assets/coffee-experiments-glasses.png);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position-x: 60%;
     opacity: 1
 
-
 }
 
-td.current > a {
+table.nav td.current > a {
 	font-weight: normal; 
 
 }
 
-td:hover {
+table.nav td:hover {
   opacity: 1;
 }
 
-td {
+table.nav td {
 	width:25%;
 	vertical-align: bottom;
 	opacity: 0.8;
 }
-
-* {
-	margin:0;
-	padding: 0;
-	font-weight: normal;
-  list-style: none;
-}
-
-article {
-
-  background-image: url(/assets/coffee_experiments_paper.jpg);
-  width: 800px;
-  background-size: 100%;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  text-decoration: none;
-  color: #4b4642;
-  margin: auto;
-  padding-top: 28px;
-	
-}
-
-div {
-	
-	top: 20px;
-	text-align: center;
-
-}
-
-footer {
-
-  background-image: url(/assets/coffee_experiments_edge.png);
-  width: 800px;
-  height: 66px;
-  background-size: 100%;
-  position: relative;
-  top: 20px;
-}
-
 
 ul li {
   display: block;
@@ -201,21 +275,8 @@ li:hover li a:hover {
 }
 
 
-div table {
 
-  font-family: "Helvetica Neue";
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-}
 
-div table td {
-  width:auto;
-  height: 56px; 
-}
 
-div table {
-  width: 90%;
-  margin: auto;
-  height: 55px;
-}
+
+
