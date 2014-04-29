@@ -115,6 +115,7 @@ h1 {
   font-size: 20px;
   letter-spacing: 1.7px;
   font-weight: normal;
+  
 
 }
 
@@ -212,11 +213,11 @@ table.nav {
 }
 
 table.nav td.current {
-	background-image: url(/assets/coffee-experiments-glasses.png);
+	 background-image: url(/assets/coffee-experiments-glasses.png);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position-x: 60%;
-    opacity: 1
+    opacity: 1;
 
 }
 
