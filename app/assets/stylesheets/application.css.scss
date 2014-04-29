@@ -17,7 +17,7 @@ a {
 
 article {
 
-  background-image: url(/assets/coffee_experiments_paper.jpg);
+  background-image: image-url("coffee_experiments_paper.jpg");
   width: 800px;
   background-size: 100%;
   border-bottom-right-radius: 30px;
@@ -36,7 +36,7 @@ article > div {
 }
 
 body {
-	background-image: url(/assets/texture-brown.jpg);
+	background-image: image-url("texture-brown.jpg");
 	font-family: "American Typewriter";
 	font-weight: lighter;
 	color: #4b4642;
@@ -81,7 +81,7 @@ footer {
 }
 
 footer > div{
-  background-image: url(/assets/coffee_experiments_edge.png);
+  background-image: image-url("coffee_experiments_edge.png");
   width: 800px;
   height: 66px;
   background-size: 100%;
@@ -90,7 +90,7 @@ footer > div{
 }
 
 header {
-  background-image: url(/assets/coffee_experiments_header.jpg);
+  background-image: image-url("coffee_experiments_header.jpg");
   width: 800px;
   height: 237px;
   background-size: 100%;
@@ -198,7 +198,7 @@ table.nav {
 }
 
 table.nav td.current {
-	background-image: url(/assets/coffee-experiments-glasses.png);
+    background-image: image-url("coffee-experiments-glasses.png");
     background-size: 40%;
     background-repeat: no-repeat;
     background-position-x: 60%;
@@ -259,10 +259,4 @@ li:hover li {
 li:hover li a:hover {
   background: #867d74;
 }
-
-
-
-
-
-
 
