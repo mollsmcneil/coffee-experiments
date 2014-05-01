@@ -43,6 +43,34 @@ body {
 
 }
 
+div.brewimage {
+  float: left; 
+  margin-top: 0px;
+  padding-left: 40px;
+  padding-right: 20px;
+
+}
+
+div.grid {
+  background-image: image-url("background-variables-coffee-experiments.png");
+  width: 800px;
+  height: 794px;
+  position: relative;
+}
+
+div table {
+  font-family: "Apple Symbols";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  margin-top: 33px;
+
+}
+
 div table td {
   width: 80px;
   height: 45px;
@@ -110,7 +138,9 @@ h2 {
   font-weight: normal;
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 20px;
+  position: relative;
+  left: 20px;
 
 }
 
@@ -131,7 +161,7 @@ h4 {
 
 h5 {
   font-size: 20px;
-  letter-spacing: 1.7px;
+  letter-spacing: 2px;
   font-weight: normal;
 }
 
@@ -143,6 +173,24 @@ h6 {
   font-weight: lighter;
   color: black;
 
+}
+
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li {
+  float: none;
+  font-size: 11px;
+}
+
+li:hover li a:hover {
+  background: #867d74;
+}
+
+li ul {
+  display: none;
 }
 
 nav {
@@ -159,7 +207,7 @@ p {
   margin: 6px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 20px;
   text-align: justify;
   line-height: 16pt;
@@ -178,17 +226,25 @@ p:first-letter {
   margin-right: 1px;
 }
 
-div table {
+p.grid {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+p.footer {
+  margin: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  text-align: justify;
+  line-height: 16pt;
   font-family: "Apple Symbols";
   font-size: 16px;
-  font-weight: 400;
-  text-align: left;
-  border-spacing: 0;
-  border-collapse: collapse;
-  width: 90%;
-  margin: auto;
-  margin-top: 33px;
-
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 table.nav {
@@ -226,10 +282,6 @@ ul li {
   float: left;
 }
 
-li ul {
-  display: none;
-}
-
 ul li a {
   display: block;
   text-decoration: none;
@@ -246,17 +298,5 @@ ul li a:hover {
   background:#4b4642;
 }
 
-li:hover ul {
-  display: block;
-  position: absolute;
-}
 
-li:hover li {
-  float: none;
-  font-size: 11px;
-}
-
-li:hover li a:hover {
-  background: #867d74;
-}
 
