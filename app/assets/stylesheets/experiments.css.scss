@@ -108,13 +108,24 @@ footer {
    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0));
 }
 
-footer > div{
+footer > div {
   background-image: image-url("coffee_experiments_edge.png");
   width: 800px;
   height: 66px;
   background-size: 100%;
   position: relative;
   top: 20px;
+  text-align: center;
+  padding-top: 16px;
+  box-sizing: border-box;
+
+  span {
+    line-height: 16pt;
+    font-size: 10px;
+    letter-spacing: 1px;
+    opacity:.5;
+
+  }
 }
 
 header {
@@ -139,8 +150,7 @@ h2 {
   text-align: left;
   padding-left: 20px;
   padding-bottom: 20px;
-  position: relative;
-  left: 20px;
+  margin-left: 20px;
 
 }
 
@@ -230,21 +240,6 @@ p.grid {
   padding-top: 0px;
   padding-bottom: 0px;
 
-}
-
-p.footer {
-  margin: 0px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  text-align: justify;
-  line-height: 16pt;
-  font-family: "Apple Symbols";
-  font-size: 16px;
-  margin-bottom: 0px;
-  letter-spacing: 1px;
-  text-align: center;
 }
 
 table.nav {
