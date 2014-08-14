@@ -17,3 +17,6 @@ end
 
 def aeropress
 end
+
+def siphon
+end

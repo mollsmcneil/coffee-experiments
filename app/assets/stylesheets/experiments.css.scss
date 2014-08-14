@@ -45,17 +45,41 @@ body {
 
 div.brewimage {
   float: left; 
-  margin-top: 0px;
-  padding-left: 40px;
-  padding-right: 20px;
-
+  margin-top: 15px;
+  padding-left: 50px;
+  padding-right: 40px;
+  img{
+    width: 100px;
+  }
 }
+ol.instructions {
+  text-align: justify;
+  line-height: 20pt;
+  font-family: "Apple Symbols";
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-left: 60px;
+  margin-right: 40px;
+  margin-top: 30px;
+  li {
+    list-style: decimal;
+  }
+}
+
+
 
 div.grid {
   background-image: image-url("background-variables-coffee-experiments.png");
   width: 800px;
   height: 794px;
   position: relative;
+}
+
+div.brewtable {
+  background-image: image-url("coffee-experiments-chart-paper.png");
+  position: relative;
+  margin-top: 30px;
+  height: 413px;
 }
 
 div table {

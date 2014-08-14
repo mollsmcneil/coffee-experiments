@@ -7,6 +7,7 @@ CoffeeExperiments::Application.routes.draw do
   get "methods/mokapot"
   get "methods/pourover"
   get "methods/aeropress"
+  get "methods/siphon"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
