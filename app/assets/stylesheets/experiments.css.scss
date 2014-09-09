@@ -52,6 +52,7 @@ div.brewimage {
     width: 100px;
   }
 }
+
 ol.instructions {
   text-align: justify;
   line-height: 20pt;
@@ -78,9 +79,39 @@ div.grid {
 div.brewtable {
   background-image: image-url("coffee-experiments-chart-paper.png");
   position: relative;
-  margin-top: 30px;
   height: 413px;
 }
+
+div.ideas {
+  margin-top: 10px;
+  height: 420px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div.ideas p {
+  padding-top: 0px;
+}
+
+div.instructions {
+  margin-top: 20px;
+  height: 100px;
+}
+
+div.letters {
+  margin-right: 100px;
+  margin-left: 100px;
+  font-style: italic;
+}
+
+div.letters p:first-letter {
+  font-size: 100%;
+  line-height: 16pt;
+  font-family: "Apple Symbols";
+  margin-right: 0px;
+}
+
+
 
 div table {
   font-family: "Apple Symbols";
@@ -179,10 +210,11 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1.7px;
   font-weight: normal;
-  padding-top: 28px;
+  padding-top: 45px;
+  padding-bottom: 10px;
 }
 
 h4 {
@@ -254,7 +286,6 @@ p {
 
 p:first-letter {
   font-size: 200%;
-  float: left;
   line-height: .9;
   font-family: "American Typewriter";
   margin-right: 1px;
@@ -264,6 +295,16 @@ p.grid {
   padding-top: 0px;
   padding-bottom: 0px;
 
+}
+
+p.instructionsright {
+  text-indent: -30px;
+  margin-left: 80px;
+}
+
+p.instructionsleft {
+  text-indent: -30px;
+  margin-left: 170px;
 }
 
 table.nav {
