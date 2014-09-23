@@ -8,12 +8,96 @@
   </p>
 </div>
 
+
+
+
+
 <h3>Brew Calculator</h3>
 
-  <div style="padding-top:20px; padding-bottom:30px">
-        <%= image_tag "coffee-experiments-brewcalculator.png"%>
-  </div>
+  <div class=calctable>
 
+    <div class="presscalcimages">
+      <div class="calcbeanimage">
+        <div class="smallbeans"></div>
+        <div class="medbeans"></div>
+        <div class="largebeans"></div>
+        <div class="extrabeans"></div>
+      </div>
+      <div class="calcwaterimage">
+        <div class="onewater"></div>
+        <div class="twowaters"></div>
+        <div class="threewaters"></div>  
+        <div class="fourwaters"></div>     
+      </div>
+      <div class="calcmugimage">
+        <div class="onemug"></div>
+        <div class="twomugs"></div>
+        <div class="twobigmugs"></div>
+        <div class="fourmugs"></div>
+      </div>
+    </div>
+
+    <div class=calc>
+      <table class=calc>
+        <tr>
+
+          <td><div class="arrowsimage"></div>
+            <li>
+              <div id="press-size" style="margin-left: 15px; margin-bottom:3px">8c Press
+                <div class="dimensions">34oz - 1000ml</div></div>
+              <ul class="calc" id="press-size-dropdown">
+                <li data-value="onewater" data-g="350">3c Press 
+                  <div class="dimensions">12oz - 350ml</div>
+                </li>
+                <li data-value="twowaters" data-g="600">4c Press 
+                  <div class="dimensions">17-21oz - 600ml</div>
+                </li>
+                <li data-value="threewaters" data-g="1000">8c Press
+                  <div class="dimensions">34oz - 1000ml</div>
+                </li>
+                <li data-value="fourwaters" data-g="1500">12c Press
+                  <div class="dimensions">51oz - 1500ml</div>
+                </li>
+              </ul>
+            </li>
+          </td>
+
+          <td><div class="arrowsimage"></div>
+            <li><div id="press-ratio" style="margin-left: 15px; margin-bottom:14px">1:14</div>
+              <ul class="calc" id="press-ratio-dropdown">
+                  <li data-value="extrabeans" data-r="10">1:10</li>
+                  <li data-value="largebeans" data-r="11">1:11</li>
+                  <li data-value="medbeans" data-r="14">1:14</li>
+                  <li data-value="smallbeans" data-r="16">1:16</li>
+              </ul>
+            </li>
+          </td>
+
+          <td> 
+            <li style="li:hover: color: white; background: #4b4642" id="press-beans">71g
+            </li>
+          </td>
+
+          <td>
+            <li  style="li:hover: color: white; background: #4b4642" id="press-water">1000g
+            </li>
+          </td>
+
+          <td><div class="arrowsimage"></div>
+            <li><div id="press-servings" style="margin-left: 15px; margin-bottom:14px">2 big mugs</div>
+              <ul class="calc" id="press-servings-dropdown">
+                  <li data-value="onemug" data-g="350">1+ mug</li>
+                  <li data-value="twomugs" data-g="600">2 mugs</li>
+                  <li data-value="twobigmugs" data-g="1000">2 big mugs</li>
+                  <li data-value="fourmugs" data-g="1500">4 mugs</li>
+              </ul>
+            </li>
+          </td>
+
+        </tr>
+      </table>
+    </div>
+  </div>
 
 
 <h3>Instructions</h3>
@@ -69,63 +153,61 @@
 
 <h3>Table 1: Brew Method Variables for French Press</h3>
 <div class=brewtable>
-  <div style= "padding-top:20px">
-      <table>
-        <tr> 
-        <th>Source</th>
-        <th>Bean:H2O</th>
-        <th>Time</th>
-        <th>Grind</th>
-        <th>Temp</th>
-        <th>Bean</th>
-        </tr>
+  <table class=brewtable>
+    <tr> 
+    <th>Source</th>
+    <th>Bean:H2O</th>
+    <th>Time</th>
+    <th>Grind</th>
+    <th>Temp</th>
+    <th>Bean</th>
+    </tr>
 
-        <tr> 
-          <td>Blue Bottle</td>
-          <td>1:10</td>
-          <td>30s Bloom, 4min</td>
-          <td>Coarse</td>
-          <td>Boil</td>
-          <td>fruity, heavy, creamy</td>
-        </tr>
+    <tr> 
+      <td>Blue Bottle</td>
+      <td>1:10</td>
+      <td>30s Bloom, 4min</td>
+      <td>Coarse</td>
+      <td>Boil</td>
+      <td>fruity, heavy, creamy</td>
+    </tr>
 
-        <tr> 
-          <td>Stumptown</td>
-          <td>1:16</td>
-          <td>4min</td>
-          <td>Coarse</td>
-          <td>Just to a boil</td>
-          <td>n/a</td>
-        </tr>
+    <tr> 
+      <td>Stumptown</td>
+      <td>1:16</td>
+      <td>4min</td>
+      <td>Coarse</td>
+      <td>Just to a boil</td>
+      <td>n/a</td>
+    </tr>
 
-        <tr> 
-          <td>Ritual Coffee</td>
-          <td>1:16</td>
-          <td>4min</td>
-          <td>Medium</td>
-          <td>96°C</td>
-          <td>TBD</td>
-        </tr>
+    <tr> 
+      <td>Ritual Coffee</td>
+      <td>1:16</td>
+      <td>4min</td>
+      <td>Medium</td>
+      <td>96°C</td>
+      <td>TBD</td>
+    </tr>
 
-        <tr> 
-          <td>Sight Glass</td>
-          <td>1:14</td>
-          <td>30sec, Stir, 3:30min</td>
-          <td>Coarser</td>
-          <td>Boil, let cool a few min</td>
-          <td>TBD</td>
-        </tr>
+    <tr> 
+      <td>Sight Glass</td>
+      <td>1:14</td>
+      <td>30sec, Stir, 3:30min</td>
+      <td>Coarser</td>
+      <td>Boil, let cool a few min</td>
+      <td>TBD</td>
+    </tr>
 
-        <tr> 
-          <td>Verve</td>
-          <td>1:11</td>
-          <td>30sec, Stir, 3min</td>
-          <td>Coarse</td>
-          <td>90°-96°C</td>
-          <td>TBD</td>
-        </tr>
+    <tr> 
+      <td>Verve</td>
+      <td>1:11</td>
+      <td>30sec, Stir, 3min</td>
+      <td>Coarse</td>
+      <td>90°-96°C</td>
+      <td>TBD</td>
+    </tr>
 
-      </table>
-    </div>
-  </div>
+  </table>
+</div>
 
