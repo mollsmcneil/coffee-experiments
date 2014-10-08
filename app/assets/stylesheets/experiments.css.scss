@@ -371,7 +371,8 @@ ul li a:hover {
 //calculator table:
 
 div.calctable {
-  background-image: image-url("coffee-experiments-calculator-press-background.png");
+  background-image: image-url("coffee-experiments-calculator-background.png");
+  background-size: 800px;
   position: relative;
   height: 140px;
 
@@ -381,21 +382,46 @@ div.calctable {
       padding-left: 63px;
   }
 
-  .calcbeanimage > div {
-      width:100px;
-      height:100px;
-      display:none;
-  }
+
 
   .presscalcimages {
-    margin-left: 360px;
+    margin-left: 63px;
   }
 
-  .calcbeanimage {
+//apparatus
+
+  .calcimage > div {
+      width:130px;
+      height:95px;
+      display:none;
       float: left;
+      margin-left: 5px;
+      margin-top: 7px;
   }
 
-//beans
+
+  .pressone { 
+    background-image: image-url("coffee-experiments-calculator-press1.png");
+    background-size: 100%;
+  }
+
+  .pouroverone { 
+    background-image: image-url("coffee-experiments-calculator-pourover1.png");
+    background-size: 100%;
+  }
+
+  .pourovertwo { 
+    background-image: image-url("coffee-experiments-calculator-pourover2.png");
+    background-size: 100%;
+  }
+
+  .calcratio {
+      background-image: image-url("coffee-experiments-calculator-ratio.png");
+      background-size: 100%;
+  }
+
+
+  //beans
 
   .smallbeans { 
     background-image: image-url("coffee-experiments-calculator-1beans.png");
@@ -416,17 +442,6 @@ div.calctable {
 
   
   //water
-  .calcwaterimage > div {
-    width:100px;
-    height:100px;
-    display:none;
-  }
-
-
-  .calcwaterimage {
-    float: left;
-    margin-left: 130px;
-  }
 
   .onewater { 
     background-image: image-url("coffee-experiments-calculator-1water.png");
@@ -448,18 +463,11 @@ div.calctable {
 
   //#Servings
 
-  .calcmugimage > div {
-    width:100px;
-    height:100px;
-    display:none;
+  .smallmug { 
+    background-image: image-url("coffee-experiments-calculator-1smallmug.png");
+    background-size: 100%;
   }
-
-
-  .calcmugimage {
-    float: left;
-    margin-left: 265px;
-  }
-
+  
   .onemug { 
     background-image: image-url("coffee-experiments-calculator-1mug.png");
     background-size: 100%;

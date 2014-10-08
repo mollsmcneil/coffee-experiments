@@ -12,6 +12,10 @@ $(function (){
 		$("#press-water").html(water + "g");
 		$("#press-beans").html(Math.round(water / ratio) + "g");
 		$("#press-servings").html(servings_contents);
+		$("div.calcmugimage > div").hide();
+        $("div.calcmugimage > div[data-g=" + water + "]").show();
+        $("div.calcwaterimage > div").hide();
+        $("div.calcwaterimage > div[data-g=" + water + "]").show();
 
 	})
 
@@ -23,6 +27,8 @@ $(function (){
 		$("#press-ratio").html(contents);
 		$("#press-water").html(water + "g");
 		$("#press-beans").html(Math.round(water / ratio) + "g");
+		$("div.calcbeanimage > div").hide();
+        $("div.calcbeanimage > div[data-r=" + ratio + "]").show();
 
 	})
 
@@ -31,41 +37,26 @@ $(function (){
 
 		var contents = $(this).html();
 		var size_contents = $("#press-size-dropdown [data-g=" + water + "]").html();
-
+                                                    
 		$("#press-servings").html(contents);
 		$("#press-water").html(water + "g");
 		$("#press-beans").html(Math.round(water / ratio) + "g");
 		$("#press-size").html(size_contents);
+		$("div.calcmugimage > div").hide();
+        $("div.calcmugimage > div[data-g=" + water + "]").show();
+        $("div.calcwaterimage > div").hide();
+        $("div.calcwaterimage > div[data-g=" + water + "]").show();
 	})
-})
 
-
-
-$(function(){
-    function changeImage(image)
-    {
-        // hide all mainimages          
-        $('div.calcbeanimage > div ').hide();
-        
-        // show the selected image
-        $('div.calcbeanimage > div.' + image).show(); 
-
-        // hide all mainimages          
-        $('div.calcwaterimage > div ').hide();
-        
-        // show the selected image
-        $('div.calcwaterimage > div.' + image).show();  
-
-        // hide all mainimages          
-        $('div.calcmugimage > div ').hide();
-        
-        // show the selected image
-        $('div.calcmugimage > div.' + image).show();      
+    /*function changeImage(image, cell) {        
+        $('div.' + cell + ' > div').hide();
+        $('div.' + cell + ' > div.' + image).show();      
     }
     
-    $('ul > li').click(function(){
+    $('table.calc ul > li').click(function(){
 
-	        var selected = $(this);
-	        changeImage(selected.data('value'));   
-	    });
-    });
+        var selected = $(this);
+        changeImage(selected.data('value'), selected.data('cell'));   
+	});*/
+
+});
