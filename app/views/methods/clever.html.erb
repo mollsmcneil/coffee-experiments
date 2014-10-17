@@ -1,84 +1,206 @@
 <h2>Brew Method: Clever</h2>
 <div>
     <div  class=brewimage>
-        <%= image_tag "coffee-experiments-clever.png",:style => "width:120px" %>
+        <%= image_tag "coffee-experiments-clever.png" %>
     </div>
   <p>
-  	To get back some of the fullness of taste of a Cafetière while still retaining some of the delicate flavours exposed by a pour-over you can use the Clever. The gadget, highly deserving of its name, combines the full immersion method with the filtering through a paper filter resulting in a pleasant balance of a rich body without getting overwhelmed by the grind texture.  
+    The clever is a hybrid full-immersion and filtered brew method. Keeping the best features from the french press and the pour over, but removing the drawbacks by controlling the amount of steeping time, and filtering out the suspended grit. Key identifiers are  a full bodied and smooth finish.
   </p>
 </div>
 
-<h3>Table 1: Comparison of Brew Method Variables for French Press</h3>
-	<div>
-      <table>
-        <tr> 
-	      <th>Source</th>
-	      <th>Bean:H2O</th>
-	      <th>Time</th>
-	      <th>Grind</th>
-	      <th>Temp</th>
-	      <th>Bean</th>
-        </tr>
 
-        <tr> 
-          <td>Blue Bottle</td>
-          <td>1:10</td>
-      	  <td>30s Bloom, 4min</td>
-      	  <td>Coarse</td>
-      	  <td>Boil</td>
-      	  <td>fruity, heavy, creamy</td>
-        </tr>
 
-        <tr> 
-          <td>Stumptown</td>
-          <td>1:16</td>
-      	  <td>4min</td>
-      	  <td>Coarse</td>
-      	  <td>Just to a boil</td>
-      	  <td>n/a</td>
-        </tr>
 
-        <tr> 
-          <td>Ritual Coffee</td>
-          <td>1:16</td>
-      	  <td>4min</td>
-      	  <td>Medium</td>
-      	  <td>96°C</td>
-      	  <td>TBD</td>
-        </tr>
 
-        <tr> 
-          <td>Sight Glass</td>
-          <td>1:14</td>
-      	  <td>30sec, Stir, 3:30min</td>
-      	  <td>Coarser</td>
-      	  <td>Boil, let cool a few min</td>
-      	  <td>TBD</td>
-        </tr>
+<h3>Clever Brew Calculator</h3>
 
-        <tr> 
-          <td>Verve</td>
-          <td>1:11</td>
-      	  <td>30sec, Stir, 3min</td>
-      	  <td>Coarse</td>
-      	  <td>90°-96°C</td>
-      	  <td>TBD</td>
-        </tr>
+  <div class=calctable>
+    <div class="presscalcimages">
+      <div class="calcapparatusimage calcimage">
+        <div data-g="300" class="cleverone"></div> 
+        <div data-g="400" class="clevertwo" style="display:block"></div>        
+      </div>
+      <div class="calcratioimage calcimage">
+        <div class="calcratio" style="display:block"></div>        
+      </div>
+      <div class="calcbeanimage calcimage">
+        <div data-r="15" class="smallbeans"></div>
+        <div data-r="14" class="medbeans" style="display:block"></div>
+        <div data-r="12" class="largebeans"></div>
+        <div data-r="11" class="extrabeans"></div>
+      </div>
+      <div class="calcwaterimage calcimage">
+        <div data-g="300" class="twowaters"></div> 
+        <div data-g="400" class="fourwaters" style="display:block"></div>     
+      </div>
+      <div class="calcmugimage calcimage">
+        <div data-g="300" class="smallmug"></div>
+        <div data-g="400" class="onemug" style="display:block"></div>
+      </div>
+    </div>
 
+    <div class=calc>
+      <table class=calc>
+        <tr>
+
+          <td><div class="arrowsimage"></div>
+            <li>
+              <div id="press-size" style="margin-left: 15px; margin-bottom:3px">Regular
+                <div class="dimensions">V2 - #4 - 400ml</div></div>
+              <ul class="calc" id="press-size-dropdown">
+                <li data-g="300">Small Cone
+                  <div class="dimensions">V1 - #2 - 300ml</div>
+                </li>
+                <li data-g="400">Regular 
+                  <div class="dimensions">V2 - #4 - 400ml</div>
+              </ul>
+            </li>
+          </td>
+
+          <td><div class="arrowsimage"></div>
+            <li><div id="press-ratio" style="margin-left: 15px; margin-bottom:14px">1:14</div>
+              <ul class="calc" id="press-ratio-dropdown">
+                  <li data-r="11">1:11</li>
+                  <li data-r="12">1:12</li>
+                  <li data-r="14">1:14</li>
+                  <li data-r="15">1:15</li>
+              </ul>
+            </li>
+          </td>
+
+          <td> 
+            <li style="li:hover: color: white; background: #4b4642" id="press-beans">71g
+            </li>
+          </td>
+
+          <td>
+            <li  style="li:hover: color: white; background: #4b4642" id="press-water">1000g
+            </li>
+          </td>
+
+          <td><div class="arrowsimage"></div>
+            <li><div id="press-servings" style="margin-left: 15px; margin-bottom:14px">1 mug</div>
+              <ul class="calc" id="press-servings-dropdown">
+                  <li data-cell="calcmugimage" data-value="onemug" data-g="300">1 small mug</li>
+                  <li data-cell="calcmugimage" data-value="twomugs" data-g="400">1 mug</li>
+              </ul>
+            </li>
+          </td>
+
+        </tr>
       </table>
     </div>
-    
+  </div>
 
 
+<h3>Instructions</h3>
 <div>
-  <ol  class=instructions>
-    <li> Preheat water and pour into press pot and desired drinking mug to pre-heat </li>
-    <li> Measure and grind beans </li>
-    <li> Remove pre-heat water from vessel and place grounds inside </li>
-    <li> Tare vessel with beans on a scale. Pour enough water to cover the beans, stir, let bloom. </li>
-    <li> Using the scale to watch, pour the remainder of the water ratio into the vessel and replace lid with plunger, but do not plunge. </li>
-    <li> After immersion time is finished, with control gently press down on plunger over 20 sec. </li>
-    <li> Dispose of pre-heat water from mug and decant brew from press pot. </li>
-    <li> Hold in both hands. Smell. Sip. Admire. </li>
-  </ol>
+  <div class=instructions>
+      <div style="float: left">
+        <%= image_tag "coffee-experiments-instructions-clever1.png",:width => "100px", :style=>"margin-left: 50px; margin-right: 30px"%>
+    </div>
+
+      <p class=instructionsleft>1. Fold the filter paper at the seam and place it in a clean cone.</p>
+  </div>
+
+  <div class=instructions>
+      <div style="float: right">
+        <%= image_tag "coffee-experiments-instructions-clever2.png",:width => "100px", :style=>"margin-left: 35px; margin-right: 50px"%>
+    </div>
+
+      <p class=instructionsright>2. Preheat water and using a slender spout water kettle, pour into clever to rinse filter paper and then decant into the mug to warm.</p>
+  </div>
+
+  <div class=instructions>
+      <div style="float: left">
+        <%= image_tag "coffee-experiments-instructions-clever3.png",:width => "100px", :style=>"margin-left: 50px; margin-right: 30px"%>
+    </div>
+
+      <p class=instructionsleft>3. Measure beans on a scale according to the bean water ratio and grind beans in a burr grinder. Place fresh grounds into the pre-rinsed clever and give it a gentle shake to flatten the bed of grounds. Tare the scale.</p>
+  </div>
+
+  <div class=instructions>
+      <div style="float: right">
+        <%= image_tag "coffee-experiments-instructions-clever4.png",:width => "100px", :style=>"margin-left: 35px; margin-right: 50px"%>
+    </div>
+
+      <p class=instructionsright>4. Starting at the center, pour the water in a slow and even spiral over the grounds to fully saturate the beans and remove air pockets. Start the timer and let bloom for 30sec.</p>
+  </div>
+
+  <div class=instructions>
+      <div style="float: left">
+        <%= image_tag "coffee-experiments-instructions-clever5.png",:width => "100px", :style=>"margin-left: 50px; margin-right: 30px"%>
+    </div>
+
+      <p class=instructionsleft>5. Using the scale to measure, continue to pour the remaining water ratio over the grounds. Let steep for an additional 3-4 min depending on preferred extraction time and grind.</p>
+  </div>
+
+  <div class=instructions>
+      <div style="float: right">
+        <%= image_tag "coffee-experiments-instructions-clever6.png",:width => "100px", :style=>"margin-left: 35px; margin-right: 50px"%>
+    </div>
+
+      <p class=instructionsright>6. Discard pre-heat water from warming mug. Place the clever on drinking vessel to decant the brew. When the last drops are free from the clever, remove brew vessel from the mug. Enjoy.</p>
+  </div>
 </div>
+
+<h3>Clever Variables Table</h3>
+<div class=brewtable>
+  <table class=brewtable>
+    <tr> 
+    <th>Source</th>
+    <th>Bean:H2O</th>
+    <th>Time</th>
+    <th>Grind</th>
+    <th>Temp</th>
+    <th>Bean</th>
+    </tr>
+
+    <tr> 
+      <td>Blue Bottle</td>
+      <td>1:10</td>
+      <td>30s Bloom, 4min</td>
+      <td>Coarse</td>
+      <td>Boil</td>
+      <td>fruity, heavy, creamy</td>
+    </tr>
+
+    <tr> 
+      <td>Stumptown</td>
+      <td>1:16</td>
+      <td>4min</td>
+      <td>Coarse</td>
+      <td>Just to a boil</td>
+      <td>n/a</td>
+    </tr>
+
+    <tr> 
+      <td>Ritual Coffee</td>
+      <td>1:16</td>
+      <td>4min</td>
+      <td>Medium</td>
+      <td>96°C</td>
+      <td>TBD</td>
+    </tr>
+
+    <tr> 
+      <td>Sight Glass</td>
+      <td>1:14</td>
+      <td>30sec, Stir, 3:30min</td>
+      <td>Coarser</td>
+      <td>Boil, let cool a few min</td>
+      <td>TBD</td>
+    </tr>
+
+    <tr> 
+      <td>Verve</td>
+      <td>1:11</td>
+      <td>30sec, Stir, 3min</td>
+      <td>Coarse</td>
+      <td>90°-96°C</td>
+      <td>TBD</td>
+    </tr>
+
+  </table>
+</div>
+

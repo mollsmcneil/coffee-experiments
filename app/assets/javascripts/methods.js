@@ -16,6 +16,8 @@ $(function (){
         $("div.calcmugimage > div[data-g=" + water + "]").show();
         $("div.calcwaterimage > div").hide();
         $("div.calcwaterimage > div[data-g=" + water + "]").show();
+        $("div.calcapparatusimage > div").hide();
+        $("div.calcapparatusimage > div[data-g=" + water + "]").show();
 
 	})
 
@@ -46,17 +48,9 @@ $(function (){
         $("div.calcmugimage > div[data-g=" + water + "]").show();
         $("div.calcwaterimage > div").hide();
         $("div.calcwaterimage > div[data-g=" + water + "]").show();
+        $("div.calcapparatusimage > div").hide();
+        $("div.calcapparatusimage > div[data-g=" + water + "]").show();
 	})
 
-    /*function changeImage(image, cell) {        
-        $('div.' + cell + ' > div').hide();
-        $('div.' + cell + ' > div.' + image).show();      
-    }
-    
-    $('table.calc ul > li').click(function(){
-
-        var selected = $(this);
-        changeImage(selected.data('value'), selected.data('cell'));   
-	});*/
-
+   
 });

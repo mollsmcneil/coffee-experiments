@@ -61,8 +61,8 @@ div.grid {
 }
 
 div.ideas {
-  margin-top: 10px;
-  height: 420px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -80,6 +80,7 @@ div.letters {
   margin-right: 100px;
   margin-left: 100px;
   font-style: italic;
+  border-bottom: 2px dotted #4b4642;
 }
 
 div.letters p:first-letter {
@@ -211,6 +212,14 @@ p {
 
 }
 
+p.date, p.addressee {
+  margin: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 p:first-letter {
   font-size: 200%;
   line-height: .9;
@@ -233,6 +242,7 @@ p.instructionsleft {
   text-indent: -30px;
   margin-left: 170px;
 }
+
 
 
 //brewtable
@@ -412,6 +422,16 @@ div.calctable {
 
   .pourovertwo { 
     background-image: image-url("coffee-experiments-calculator-pourover2.png");
+    background-size: 100%;
+  }
+
+  .cleverone { 
+    background-image: image-url("coffee-experiments-calculator-clever1.png");
+    background-size: 100%;
+  }
+
+  .clevertwo { 
+    background-image: image-url("coffee-experiments-calculator-clever2.png");
     background-size: 100%;
   }
 

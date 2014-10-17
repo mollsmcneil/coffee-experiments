@@ -16,22 +16,26 @@
       <table class=nav>
         <tr>
           <td class="<%= "current" if request.path == root_path %>">
+            <li>
             <a href="<%= root_path %>">The Experiments</a>
+                 <ul id="menu">                
+                  <li> <a href="<%=methods_frenchpress_path %>">Experiment 1</a></li>
+                  <li> <a href="<%=methods_clever_path %>">Experiment 2</a></li>
+                  <li> <a href="<%=methods_pourover_path %>">Experiment 3</a></li>             
+                </ul>
+              </li>
           </td>
-          <td class="<%= "current" if request.path == methods_index_path %>">
-            
+          <td class="<%= "current" if request.path == methods_index_path %>">            
               <li>
                 <a href="<%= methods_index_path %>">Methods</a>
-                <code><ul id="menu">
-                <ul>
+                <ul id="menu">                
                   <li> <a href="<%=methods_frenchpress_path %>">French Press</a></li>
                   <li> <a href="<%=methods_clever_path %>">Clever</a></li>
                   <li> <a href="<%=methods_pourover_path %>">Pour Over</a></li>
-                   <li> <a href="<%=methods_aeropress_path %>">Aeropress</a></li>
+                  <!-- <li> <a href="<%=methods_aeropress_path %>">Aeropress</a></li> 
                   <li> <a href="<%=methods_mokapot_path %>">Moka Pot</a></li>
-                  <li> <a href="<%=methods_siphon_path %>">Siphon</a></li>
+                  <li> <a href="<%=methods_siphon_path %>">Siphon</a></li> -->                
                 </ul>
-                </ul></code>
               </li>
           </td>
           <td class="<%= "current" if request.path == questions_index_path %>">
