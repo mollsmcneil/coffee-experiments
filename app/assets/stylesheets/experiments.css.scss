@@ -5,15 +5,7 @@
   list-style: none;
 }
 
-a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 30px;
-  color: #4b4642;
-  text-decoration: none;
 
-}
 
 article {
 
@@ -88,6 +80,12 @@ div.letters p:first-letter {
   line-height: 16pt;
   font-family: "Apple Symbols";
   margin-right: 0px;
+}
+
+div.experiment {
+  padding-top: 50px;
+  border-top: 2px dotted #c2c2c2;
+  margin-top: 50px;
 }
 
 footer {
@@ -186,10 +184,10 @@ ol.instructions {
   text-align: justify;
   line-height: 20pt;
   font-family: "Apple Symbols";
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
-  margin-left: 60px;
-  margin-right: 40px;
+  margin-left: 100px;
+  margin-right: 70px;
   margin-top: 30px;
   li {
     list-style: decimal;
@@ -227,6 +225,18 @@ p:first-letter {
   margin-right: 1px;
 }
 
+p.experiment {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+p.experiment:first-letter {
+    font-size: 100%;
+    line-height: 16pt;
+    font-family: "Apple Symbols";
+    margin-right: none;
+}
+
 p.grid {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -244,6 +254,18 @@ p.instructionsleft {
 }
 
 
+
+//brewlink table
+
+div.brewlink a:hover{
+  background: #867d74;
+}
+
+table.brewlink {
+  font-family: "American Typewriter";
+  font-size: 14px;
+
+}
 
 //brewtable
 
@@ -302,6 +324,37 @@ table.brewtable {
 }
 
 
+
+div.inquiryform {
+   margin-top:50px;
+   background-image: image-url("coffee-experiments-inquiryform.png");
+   background-size: 600px; 
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 350px;
+   
+div {
+
+  input {
+    border: none;
+    border-bottom: 1px dashed black;
+    height: 19px;
+    font-family: "American Typewriter";
+    position: absolute;
+    margin-left: -182px;
+    padding-left: 8px;
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
 //Naviation 'table'
 
 
@@ -311,6 +364,17 @@ table.nav {
 	margin: auto;
 	height: 55px;
 
+
+
+a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  color: #4b4642;
+  text-decoration: none;
+
+}
   li:hover ul {
     display: block;
     position: absolute;
