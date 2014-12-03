@@ -4,16 +4,11 @@
         <%= image_tag "coffee-experiments-press.png" %>
     </div>
   <p>
-  	The French Press (or Press Pot, Cafetière) is a full immersion, non-filtered brew method. Some key identifiers for this method are: full bodied, heavier mouth-feel, and an oilier finish.  
+  	The French Press (Press Pot, or Cafetiere) is a full immersion, non-filtered brew method. The resulting coffee tends to be full bodied with a heavier mouth-feel and an oilier finish than methods that use a paper filter. 
   </p>
 </div>
 
-
-
-
-
 <h3>Press Brew Calculator</h3>
-
   <div class=calctable>
     <div class="presscalcimages">
       <div class="calcapparatusimage calcimage">
@@ -48,8 +43,7 @@
 
           <td><div class="arrowsimage"></div>
             <li>
-              <div id="press-size" style="margin-left: 15px; margin-bottom:3px">8c Press
-                <div class="dimensions">34oz - 1000ml</div></div>
+              <div id="press-size" data-g="1000" style="margin-left: 15px; margin-bottom:3px"></div>
               <ul class="calc" id="press-size-dropdown">
                 <li data-g="350">3c Press 
                   <div class="dimensions">12oz - 350ml</div>
@@ -68,7 +62,7 @@
           </td>
 
           <td><div class="arrowsimage"></div>
-            <li><div id="press-ratio" style="margin-left: 15px; margin-bottom:14px">1:14</div>
+            <li><div id="press-ratio" data-r="14" style="margin-left: 15px; margin-bottom:14px"></div>
               <ul class="calc" id="press-ratio-dropdown">
                   <li data-r="10">1:10</li>
                   <li data-r="11">1:11</li>
@@ -79,17 +73,17 @@
           </td>
 
           <td> 
-            <li style="li:hover: color: white; background: #4b4642" id="press-beans">71g
+            <li style="li:hover: color: white; background: #4b4642" id="press-beans">
             </li>
           </td>
 
           <td>
-            <li  style="li:hover: color: white; background: #4b4642" id="press-water">1000g
+            <li style="li:hover: color: white; background: #4b4642" id="press-water">1000g
             </li>
           </td>
 
           <td><div class="arrowsimage"></div>
-            <li><div id="press-servings" style="margin-left: 15px; margin-bottom:14px">2 big mugs</div>
+            <li><div id="press-servings" data-g="1000" style="margin-left: 15px; margin-bottom:14px"></div>
               <ul class="calc" id="press-servings-dropdown">
                   <li data-cell="calcmugimage" data-value="onemug" data-g="350">1+ mug</li>
                   <li data-cell="calcmugimage" data-value="twomugs" data-g="600">2 mugs</li>
@@ -112,7 +106,7 @@
         <%= image_tag "coffee-experiments-preheat-water.png",:width => "100px", :style=>"margin-left: 50px; margin-right: 30px"%>
     </div>
 
-      <p class=instructionsleft>1. Preheat water and pour into press pot and desired drinking vessel to warm.</p>
+      <p class=instructionsleft>1. Preheat water and pour a small amount into the French Press and desired drinking vessel to warm them up.</p>
   </div>
 
   <div class=instructions>
@@ -120,7 +114,7 @@
         <%= image_tag "coffee-experiments-grind-beans.png",:width => "100px", :style=>"margin-left: 35px; margin-right: 50px"%>
     </div>
 
-      <p class=instructionsright>2. Measure beans on scale according to bean water ratio and grind beans in burr grinder. *(Remember to remove pre-heat water from vessels before adding coffee)</p>
+      <p class=instructionsright>2. Measure beans on scale according to bean water ratio and grind beans in burr grinder. (Remember to remove the pre-heat water from step 1 <i>before</i> adding coffee to the French Press!)</p>
   </div>
 
   <div class=instructions>
@@ -128,7 +122,7 @@
         <%= image_tag "coffee-experiments-bloom-press.png",:width => "100px", :style=>"margin-left: 50px; margin-right: 30px"%>
     </div>
 
-      <p class=instructionsleft>3. Tare press pot with beans on a scale. Pour enough water to cover all the beans, stir, and let bloom.</p>
+      <p class=instructionsleft>3. Put the grounds into the French Press on a scale, then tare. Pour a splash of water to cover all the beans, stir, and let bloom for 30sec.</p>
   </div>
 
   <div class=instructions>
@@ -136,7 +130,7 @@
         <%= image_tag "coffee-experiments-immersion-press.png",:width => "100px", :style=>"margin-left: 35px; margin-right: 50px"%>
     </div>
 
-      <p class=instructionsright>4. Using the scale to measure, pour the remaing water ratio into the press pot and replace lid with plunger, but do not plunge.</p>
+      <p class=instructionsright>4. Using the scale to measure, pour the remaing water into the French Press and cover with the lid but do not plunge.</p>
   </div>
 
   <div class=instructions>
@@ -144,7 +138,7 @@
         <%= image_tag "coffee-experiments-plunge-press.png",:width => "100px", :style=>"margin-left: 50px; margin-right: 30px"%>
     </div>
 
-      <p class=instructionsleft>5. After immersion time is finished, with control gently press down on plunger over 10-20 sec.</p>
+      <p class=instructionsleft>5. After the 4 min of immersion time, give the pot a quick stir then plunge firmly but slowly. It should take around 20s to reach the bottom.</p>
   </div>
 
   <div class=instructions>
@@ -152,7 +146,7 @@
         <%= image_tag "coffee-experiments-decant-press.png",:width => "100px", :style=>"margin-left: 35px; margin-right: 50px"%>
     </div>
 
-      <p class=instructionsright>6. Dispose of pre-heat water and decant brew from press pot into warmed vessel.</p>
+      <p class=instructionsright>6. Quickly decant brew into warmed drinking vessel. Contrary to popular belief, French Press coffee keeps brewing after plunging so it's important to decant before too many bitter flavors are extracted.</p>
   </div>
 </div>
 
@@ -170,44 +164,44 @@
 
     <tr> 
       <td>Blue Bottle</td>
-      <td>1:10</td>
-      <td>30s Bloom, 4min brew</td>
-      <td>Coarse</td>
-      <td>Boil</td>
+      <td>1:10</br>40g:400g</td>
+      <td>30s bloom, 4min brew</td>
+      <td>coarse</td>
+      <td>boil</td>
       <td>dense and heavy, vulnerable to over-extraction</td>
     </tr>
 
     <tr> 
       <td>Stumptown</td>
-      <td>1:14</td>
-      <td>1min Bloom, 3min brew</td>
+      <td>1:14</br>58g:850g</td>
+      <td>1min bloom, 3min brew</td>
       <td>breadcrumb coarse</td>
-      <td>205F</td>
+      <td>205°F</td>
       <td>an easy way to get truly excellent coffee at home</td>
     </tr>
 
     <tr> 
       <td>Ritual</td>
-      <td>1:16</td>
-      <td>1min Bloom, 3min brew</td>
+      <td>1:14</br>55g:850g</td>
+      <td>1min bloom, 3min brew</td>
       <td>#5.5 medium</td>
-      <td>205F</td>
+      <td>205°F</td>
       <td>heavy bodied with rich sweetness</td>
     </tr>
 
     <tr> 
       <td>Sight Glass</td>
-      <td>1:16</td>
+      <td>1:16</br>38g:600g</td>
       <td>30s, Stir, 3:30min</td>
-      <td>Coarser</td>
+      <td>coarser</td>
       <td>1min after boiling</td>
       <td>a more rounded sweetness backed by a satisfying mouth feel and body</td>
     </tr>
 
     <tr> 
       <td>Verve</td>
-      <td>1:15</td>
-      <td>30s Bloom, knock down bloom</td>
+      <td>1:15</br>20g:300g</td>
+      <td>30s bloom, knock down bloom</td>
       <td>coarser than drip</td>
       <td>after boil</td>
       <td>easiest way to start brewing at your house, heavy mouth feel</td>

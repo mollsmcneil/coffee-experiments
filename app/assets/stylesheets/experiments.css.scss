@@ -3,9 +3,13 @@
   padding: 0;
   font-weight: normal;
   list-style: none;
+
 }
 
-
+a {
+  text-decoration: none;
+  color: #4b4642;
+}
 
 article {
 
@@ -43,6 +47,10 @@ div.brewimage {
   img{
     width: 100px;
   }
+}
+
+div.brew-description {
+  margin-bottom: 60px;
 }
 
 div.grid {
@@ -83,7 +91,7 @@ div.letters p:first-letter {
 }
 
 div.experiment {
-  padding-top: 50px;
+  padding-top: 10px;
   border-top: 2px dotted #c2c2c2;
   margin-top: 50px;
 }
@@ -127,6 +135,21 @@ h1 {
 
 }
 
+h1.experiment-number {
+  font-size: 16px;
+   color: white;
+   background:#4b4642;
+   float:left; 
+   padding:20px 20px 20px 20px;
+   margin-left: 10px;
+}
+
+h1.experiment-title {
+
+   padding-left:50px;
+   
+}
+
 h2 {
   font-size: 20px;
   letter-spacing: 1.7px;
@@ -138,12 +161,27 @@ h2 {
 
 }
 
+h2.brew-title {
+   color: white;
+   background:#4b4642;
+   clear:left; 
+   padding:20px 20px 20px 20px;
+   margin-left: 20px;
+}
+
 h3 {
   font-size: 18px;
   letter-spacing: 1.7px;
   font-weight: normal;
   padding-top: 45px;
   padding-bottom: 10px;
+}
+
+h3.brew-title {
+   color: white;
+   background:#4b4642;
+   padding:12px 12px 12px 12px;
+   margin: 0px 215px 0px 215px;
 }
 
 h4 {
@@ -194,6 +232,16 @@ ol.instructions {
   }
 }
 
+ol.materials {
+  text-align: justify;
+  line-height: 20pt;
+  font-family: "Apple Symbols";
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 100px;
+  margin-right: 70px;
+}
+
 
 p {
   margin: 6px;
@@ -217,9 +265,17 @@ p.date, p.addressee {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+p.grid{
+  :first-letter {
+    font-size: 200%;
+    line-height: .9;
+    font-family: "American Typewriter";
+    margin-right: 1px;
+  }
+}
 
 p:first-letter {
-  font-size: 200%;
+  font-size: 150%;
   line-height: .9;
   font-family: "American Typewriter";
   margin-right: 1px;
@@ -228,6 +284,7 @@ p:first-letter {
 p.experiment {
   margin-left: 40px;
   margin-right: 40px;
+  padding-top: 0px;
 }
 
 p.experiment:first-letter {
@@ -257,13 +314,20 @@ p.instructionsleft {
 
 //brewlink table
 
-div.brewlink a:hover{
-  background: #867d74;
-}
 
 table.brewlink {
   font-family: "American Typewriter";
   font-size: 14px;
+
+  td div {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px dotted transparent;
+
+    &:hover {
+      border: 2px dotted #c2c2c2;
+    }
+  }
 
 }
 
@@ -326,7 +390,7 @@ table.brewtable {
 
 
 div.inquiryform {
-   margin-top:50px;
+   margin-top:25px;
    background-image: image-url("coffee-experiments-inquiryform.png");
    background-size: 600px; 
    background-repeat: no-repeat;

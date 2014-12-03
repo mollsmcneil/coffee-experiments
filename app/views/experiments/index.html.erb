@@ -1,32 +1,32 @@
 <h1> The Coffee Experiments </h1>
 <div>
 	<div>
-		<p>How do you enjoy your daily brew? There is a rapidly growing popular culture around coffee and various brewing methods. Are we succumbing to the allure of peer pressure or do all of these intricate gadgets actually make a difference? Thus the Coffee Experiments began.</p>
+		<p>How do you enjoy your daily brew? There is a rapidly growing coffe culture and various brewing methods. Are we succumbing to the allure of hipster peer pressure or do all of these intricate gadgets actually make a difference? Thus the Coffee Experiments began.</p>
 
 		<%= image_tag "collage-photo-coffee-experiments.jpg" %>
 	</div>
 	<div>
 		<h4>Experimental Variables</h4>
 
-			<p>Below are the variables that have the largest affect on the brew, and therefore we will use these to help define our experimental parameters.</p>
+			<p>Below are the variables that have the largest effect on coffee brewing, and therefore we will use these to help define our experimental parameters.</p>
 <div class=grid>
 		<div style="width:390px; height:200px; top:70px; left:31px; position: absolute">
 			<h5>Bean Ratio</h5>
-			<p class=grid>The more coffee you use and less water, the stronger the resulting cup. We define the amount of coffee to use as a ratio by weight, as different brewing methods make different amounts of coffee.</p>
+			<p class=grid>The more coffee you use and less water, the stronger the resulting cup. We define the amount of coffee to use as a ratio to water by weight, as different methods require different amounts of coffee.</p>
 		</div>
 		<div style="width:340px; height:200px; top:14px; left:440px; position: absolute">
-			<p class=grid>Depending on how long you leave your coffee immersed in water will determine the flavours and oils that will be extracted from the bean. This is often broken into two phases: bloom time and immersion time. Bloom time is used to remove unwanted gasses from the coffee, and immersion time is used to extract desired flavours.</P>
+			<p class=grid>Depending on how long you leave your coffee immersed in water determines which flavours and oils will be extracted from the beans. Time is often broken into two phases: bloom time and immersion time. Bloom time is used to remove unwanted gasses from the coffee, and then immersion time is used to extract desired flavours.</P>
 			<h5 style="position:relative; left: 80px">Time</h5>
 		</div>
 		<div style="width:310px; height:300px; top:282px; left:60px; position: absolute">
-			<p class=grid>The surface area the ground has exposed to the water is determined by the grind. The finer the ground the more surface area. How finely your beans have been ground affects the taste in subtle ways.  In some methods too fine a grind will lead to gritty coffee, in others too coarse a grind will lead to a bland cup of coffee.</p>
+			<p class=grid>The amount of bean exposed to the water is determined by how fine the grind. The finer the ground the more surface area. How finely your beans have been ground affects the taste in subtle ways.  In some methods too fine a grind will lead to gritty coffee, in others too coarse a grind will lead to a bland cup of coffee.</p>
 			<h5 style="position:relative; left: 35px; margin-top: 7px">Grind</h5>
 		</div>
 		<div style="width:364px; height:200px; top:318px; left:378px; position: absolute">
 			<h5 style="position:relative; right: 37px">Temperature</h5>
-			<p class=grid>Not only does the temperature at brew time change which oils are extracted from the coffee, the temperature at drinking time changes your perception of the flavour. Often you can't fully appreciate a coffee until it has cooled a little.</p>
+			<p class=grid>Not only does the temperature at brew time change which oils are extracted from the coffee, but the temperature at drinking time changes your perception of the flavour as well. Often you can't fully appreciate a coffee until it has cooled a little.</p>
 		</div>
-		<div style="width:720px; height:400px; top:616px; left:40px; position: absolute">
+		<div style="width:720px; height:200px; top:616px; left:40px; position: absolute">
 			<p class=grid>The most subjective of all variables is of course the underlying bean. Each varietal and growing region supplies its own character. The character is then enhanced by the roasting process, and subsequent storage of the beans. For each of our sets of experiments we used beans from the same bag, about a week after roasting, to let us concentrate on the finer differences introduced by the brewing methods.</p>
 			<h5 style="position:relative; margin-top: 3px">Bean & Roast</h5>
 		</div>
@@ -35,102 +35,124 @@
 </div>
 
 <div class=experiment>
-	<h1>Experiment 1: Brew Methods Overview</h1>
+	<h1 class=experiment-number id="experiment1">Experiment 1:</h1> 
 
-	<p>
-		Question: So what are all these brew methods about? Do they really make a difference to the cup of coffee? We decided to compare a few different methods to see what we could find.
-	</p>
+	<h1 class=experiment-title>
+		<div style="padding-top: 25px; margin-right: 120px">V-60 Pour Over vs. Aeropress
+		</div>
+	</h1>
 
-	<p>
-		Hypothesis: There is a difference between the brew methods, but may depend on the sensitivity and expertise of the taster’s palate.
+
+
+	<p style="padding-top:50px">Question:</p>
+	<p class=experiment> 
+		Do two different brew methods actually make a difference to a cup of coffee? In our first experiment, we will compare the difference between one cup of coffee prepared by the aeropress and another by the V-60 pour over method. We decided to compare these two methods first since both are filtered brew methods, but the aeropress is a complex hybrid full immersion and forced brew, yet the pour over takes a more straight forward elegantly simplistic approach.
 	</p>
 
 	<div class=experimentimg>
-		<%= image_tag "coffee-experiments-science-dripper.png", :height => "300px" %>
-		<%= image_tag "coffee-experiments-fourbarrel-jars.jpg", :height => "300px" %>
+		<%= image_tag "coffee-experiments-aeropress-vs-pourover.jpg", :height => "300px", :title => "More like Pou rover, Am I right?" %>
 	</div>
 
-	<p>
-		Purpose:  To compare various methods of making a cup of coffee. Compare how each method affects the quality, flavor, and experience of the cup.
+	<p>Hypothesis:</p>
+	<p class=experiment> 
+		We expect the two brews to have similar mouthfeel and texture since they are both paper filtered methods. We expect the differences to be revealed in the full immersion/high concentration aspect of the aeropress versus the quick drawn exposure of the pour over. Therefore we predict the aeropress to have a deeper flavor because of the longer extraction on the bean and the pour over to keep the essentials of the bean flavor.
 	</p>
 
+
 	<p>Variables:</p>
-	<p class=experiment>
-		Dependent: Method of cup brewing. i.e. French Press, Pour Over, Clever, Moka Pot, Aeropress. In this experiment we compare 4 different methods. 
+	<p style="padding-left:100px">
+		<abbr title="These are the variables we're changing">Independent</abbr>: Method of cup brewing: Aeropress vs Pour Over 
 	</p>
-	<p class=experiment>
-		Indepent: Type of bean, roast, water source, water termperature (per brew method), grinds
+	<p style="padding-left:100px">
+		<abbr title="These are the variables we're keeping the same">Dependent</abbr>: Type of bean & roast, water source, water temperature, bean grind, brew time (per method)
 	</p>
 	
 
 	<p>Materials</p>
-	<div class=brewlink>
-		<table class=brewlink>
-			<tr>
-				<td><li>
-				<a href="<%=methods_frenchpress_path %>">
-				<%= image_tag "coffee-experiments-sq-clever.png", :height => "100px" %></a>
-				French Press
-				<li></td>
-				<td><li>
-				<a href="<%=methods_pourover_path %>">
-				<%= image_tag "coffee-experiments-sq-pourover.png", :height => "100px" %></a>
-				Pourover
-				</li></td>
-				<td><li>
-				<a href="<%methods_clever_path %>">
-				<%= image_tag "coffee-experiments-sq-frenchpress.png", :height => "100px" %></a>
-				Clever
-				</li></td>
-			</tr>
-		</table>
-	</div>
-
-	<p class=experiment>
-		Using the same beans, same water source (filtered tap water), and following the basci brew methods instructions as described on the other pages, we brewed 4 different cups of coffee. They were all finished being made withint 5 min of each other so their flavors could be compared at the same temperature. 
-	</p>
-
-	<%= image_tag "coffee-experiments-square-beans.png", :height => "100px" %>
-
-	<p>Procedures</p>
-	
-	<ol class=instructions>
-		<li> Following the methods on the other pages, we made some kick butt coffee and it was great. </li>
-		<li>weet, eu roast, frappuccino froth dark frappuccino single shot that acerbic, single origin cortado, espresso white robusta beans, id espresso grinder in arabica iced.</li>
-		<li>Aroma wings, so frappuccino, irish latte, robusta, kopi-luwak mazagran aroma, single origin americano extra percolator cream beans crema. Skinny frappuccino rich cream, grounds grinder, café au lait half and half saucer café au lait saucer affogato trifecta.</li>
-		<li>Wings irish, caffeine eu chicory mazagran crema dripper coffee caffeine lungo, cup beans, sweet a cortado to go robusta, white, redeye half and half dark that brewed. Mazagran, cortado iced, chicory, cultivar dripper lungo mug con panna white dark filter espresso strong.</li>
-		<li>Aroma wings, so frappuccino, irish latte, robusta, kopi-luwak mazagran aroma, single origin americano extra percolator cream beans crema.</li>
+	<ol class=materials>
+		<li>- V-60 (V2) & #4 filter</li>
+		<li>- Aeropress & filter</li>
+		<li>- Kettle, slender spout w/ temperature control</li>
+		<li>- Scale to weigh beans, aeropress scoop</li>
+		<li>- Burr grinder with fine to coarse setting options</li>
+		<li>- Coffee Bean: Blue Bottle Coffee, Costa Rica Tarrazu: Santa Rosa</li>
+		<li>- Pure Water (from same source)</li>
+		<li>- Two warmed mugs</li>
 	</ol>
 
-
-
+	<%= image_tag "coffee-experiments-square-small-mug.png", :height => "100px" %>
+	<%= image_tag "coffee-experiments-square-scale.png", :height => "100px" %>
+	<%= image_tag "coffee-experiments-square-beans.png", :height => "100px" %>
 	<%= image_tag "coffee-experiments-square-kettle-2.png", :height => "100px" %>
+	<%= image_tag "coffee-experiments-square-v60-2.png", :height => "100px" %>
 
-	<p>Observations</p>
+	<p>Procedures</p>
+		
 	<p class=experiment>
-		1. Following the methods on the other pages, we made some kick butt coffee and it was great.
-		2. weet, eu roast, frappuccino froth dark frappuccino single shot that acerbic, single origin cortado, espresso white robusta beans, id espresso grinder in arabica iced.
-		3. Aroma wings, so frappuccino, irish latte, robusta, kopi-luwak mazagran aroma, single origin americano extra percolator cream beans crema. Skinny frappuccino rich cream, grounds grinder, café au lait half and half saucer café au lait saucer affogato trifecta.
-		4. Wings irish, caffeine eu chicory mazagran crema dripper coffee caffeine lungo, cup beans, sweet a cortado to go robusta, white, redeye half and half dark that brewed. Mazagran, cortado iced, chicory, cultivar dripper lungo mug con panna white dark filter espresso strong. 
-		5. Aroma wings, so frappuccino, irish latte, robusta, kopi-luwak mazagran aroma, single origin americano extra percolator cream beans crema. 
+		To brew two cups of coffee concurrently, we prepared these brews at the same time, since temperature has an affect on the coffee flavor. They were finished within 1 min of each other. 
 	</p>
 
-	<%= image_tag "coffee-experiments-square-v60-2.png", :height => "100px" %>
+	<center class=brewlink>
+		<table class=brewlink>
+			<tr>
+				<td style="text-align: center">
+					<div>
+						<a href="<%=methods_pourover_path %>">
+								<%= image_tag "coffee-experiments-sq-pourover.png", :height => "100px" %><br/>
+							Pourover
+						</a>
+					</div>
+				</td>	
+				<td style="text-align: center">
+					<div>
+						<a href="<%=methods_aeropress_path %>">
+							<%= image_tag "coffee-experiments-sq-aeropress.png", :height => "100px" %><br/>
+							Aeropress
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</center>
+
+	<ol class=instructions>
+		<li>Grind all coffee to a medium coarse grind.</li>
+		<li>Heat water to 96°C (enough for 2 brews and rinsing).</li>
+		<li>Preheat and rinse brew vessels and mugs.</li>
+		<li>Follow the specific brew method instructions (on the linked pages).</li>
+		<li>V-60 parameters: V-60, 1:12 ratio, 25g beans, 300g H20, 30sec bloom & 3 min to pour.</li>
+		<li>Aeropress parameters: 2 scoops of coffee, inverted brew method, add water post brew to be 300g liquid total (by weight).</li>
+		<li>With mugs side by side, sip each cup to compare. </li>
+		<li>In 30s cooling increments, sip the coffees to continue to compare and observe.</li>
+	</ol>
+
+	<div style="padding-top:70px">
+		<%= image_tag "coffee-experiments-glasses.png", :height=>"50px" %>
+	</div>
+
+	<p style="padding-top:0px">Observations</p>
+	<p class=experiment>
+		On first sip, the coffee was almost too hot to taste between the two brews so visually we could see the aeropress is slightly more opaque than the V-60, the V-60 being slightly darker.  After an initial 30s cool down, the differences became very apparent. The pour over has a  stronger, bolder, and simpler flavor. The Aeropress  has a more complex palate flavor and more wholesome bodied taste. The smell of the two brews were very similar, but the V-60 did smell slightly stronger and the aeropress more fruity/sweet, reflecting the resulting taste. As the brews continued to cool, these flavor differences became more pronounced.
+	</p>
+
 
 	<p>Conclusion</p>
 	<p class=experiment>
-		1. Following the methods on the other pages, we made some kick butt coffee and it was great.
-		2. weet, eu roast, frappuccino froth dark frappuccino single shot that acerbic, single origin cortado, espresso white robusta beans, id espresso grinder in arabica iced.
-		3. Aroma wings, so frappuccino, irish latte, robusta, kopi-luwak mazagran aroma, single origin americano extra percolator cream beans crema. Skinny frappuccino rich cream, grounds grinder, café au lait half and half saucer café au lait saucer affogato trifecta.
-		4. Wings irish, caffeine eu chicory mazagran crema dripper coffee caffeine lungo, cup beans, sweet a cortado to go robusta, white, redeye half and half dark that brewed. Mazagran, cortado iced, chicory, cultivar dripper lungo mug con panna white dark filter espresso strong. 
-		5. Aroma wings, so frappuccino, irish latte, robusta, kopi-luwak mazagran aroma, single origin americano extra percolator cream beans crema. 
+		We enjoyed the aeropress more than the V-60 pour over, but both made enjoyable brews. Both apparatuses are easy to clean up and interactive to use, so those aspects would not influence the decision of which method to use. Rather I would think about if my bean was more suited to the richer more whole bodied flavor of the aeropress, or the simpler and bolder result of the V-60. After talking to the owner at Wrecking Balll Coffee in SF, who uses the Kalita pour over, he explained that the cone shaped V-60 was developed in Japan where they like a lighter and simpler flavor coffee. The Kalita pour over is not cone shaped , but rather more cylindrical allowing the water to have more time to immerse the beans and extract their flavors. It would seem that an experiment is needed to investigate different pour over methods…
 	</p>
 
-	<%= image_tag "coffee-experiments-square-scale.png", :height => "100px" %>
+	<%= image_tag "coffee-experiments-science-dripper.png", :height => "300px" %>
 
 
 </div>
 
 
-
+<div class=experiment>
+	<h1 class=experiment-number id="experiment2">Experiment 2:</h1> 
+	<h1 class=experiment-title>
+		<div style="padding-top: 25px; margin-right: 120px">Inverted vs. Non-Inverted Aeropress
+		</div>
+	</h1>
+	<p>Soon to be experimented...</p>
+</div>
 

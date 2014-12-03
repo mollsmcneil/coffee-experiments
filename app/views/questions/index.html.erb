@@ -17,17 +17,15 @@
 </div>
 
 <div style="margin-top:50px">
-	<%= image_tag "coffee-experiments-square-pourover.png", :height => "100px"%>
-	<%= image_tag "coffee-experiments-me-stumptown.jpg", :height => "150px"%>
-	<%= image_tag "coffee-experiments-square-sm-mug.png", :height => "100px"%>
-	<%= image_tag "coffee-experiments-windowseat-stumptown.jpg", :height => "150px"%>
-	<%= image_tag "coffee-experiments-square-filter.png", :height => "100px"%>
+	<%= image_tag "coffee-experiments-square-pourover.png", :height => "150px"%> 
+	<%= image_tag "coffee-experiments-me-stumptown.jpg", :height => "200px"%>
+	<%= image_tag "coffee-experiments-square-filter.png", :height => "150px"%>
 
 </div>
-<form action="MAILTO:molly@elephantfig.com" method="post" enctype="text/plain">
+<form action="MAILTO:molly@elephantfig.com?subject=Coffee Experiments" method="post" enctype="text/plain">
 	<div class=inquiryform>
-		<div style="float:right; padding-top: 85px; padding-right:55px">
-			<input type="image" src="<%= image_url "coffee-experiments-inquiry-mail.png"%>" style="height:40px; border:none">
+		<div style="float:right; padding-top: 85px; padding-right:60px">
+			<input type="image" src="<%= image_url "coffee-experiments-inquiry-send.png"%>" style="height:60px; border:none">
 			</input>
 		</div>
 		<div style="padding-top:85px">
@@ -43,8 +41,7 @@
 			</input>
 		</div>
 		<div style="padding-top:47px; margin-left:45px">
-			<textarea class=inquiryform type="text" name="Question" style="border:none; padding-left:5px; height:90px; width:400px">
-			</textarea>
+			<textarea class=inquiryform type="text" name="Question" style="border:none; padding-left:5px; height:90px; width:400px"></textarea>
 		</div>
 	</div>
 </form>
