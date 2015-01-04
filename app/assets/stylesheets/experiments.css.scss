@@ -11,6 +11,16 @@ a {
   color: #4b4642;
 }
 
+a.linktosite {
+  text-decoration: underline;
+  color: blue;
+
+}
+
+a.linktosite:visited {
+  color:purple;
+}
+
 article {
 
   background-image: image-url("coffee_experiments_paper.jpg");
@@ -94,6 +104,21 @@ div.experiment {
   padding-top: 10px;
   border-top: 2px dotted #c2c2c2;
   margin-top: 50px;
+}
+
+div.facebookicon {
+  float: right;
+  clear: right;
+  position: relative;
+  top: -1.9em;
+  left: -.2em;
+}
+
+div.twittericon {
+  float: right;
+  position: relative;
+  top: -1.9em;
+  left: -.2em;
 }
 
 footer {
